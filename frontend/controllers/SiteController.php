@@ -214,4 +214,9 @@ class SiteController extends Controller
     public function actionA(){
         return $this->render('a');
     }
+    
+    public function actionSendname($fname=null,$lname=null){
+        //$sendname = $_GET['name'];
+        return $this->render('sendname',['fname'=>$fname,'lname'=>$lname]);
+    }
 }

@@ -23,6 +23,11 @@ Html::a('Link 3',['test/test2','name'=>'chainarong','lname'=>'paksin'])
 
 <hr>
 
+<?=Html::a('About', ['/site/about'], ['class'=>'btn btn-info']);?>
+
+<?=Html::a('Send Name', ['/site/sendname','fname'=>'Chainarong','lname'=>'Paksin'], ['class'=>'btn btn-warning']);?>
+<hr>
+
 <div class="site-index">
 
     <div class="jumbotron">
