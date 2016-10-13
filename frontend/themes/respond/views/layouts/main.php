@@ -8,6 +8,14 @@
 <link href="../themes/respond/assets/css/bootstrap-responsive.css" rel="stylesheet">
 <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
 <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+<!--
+<style>
+        body{
+            -webkit-filter: grayscale(1);
+	        filter: grayscale(1);
+	    }
+	    </style>
+-->
 </head>
 <body>
 <div class="navbar navbar-fixed-top">
@@ -23,10 +31,10 @@
       <div class="nav-collapse">
         <ul class="nav pull-right">
           <li class="active"><a href="../web/index.php">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="../themes/respond/views/layouts/services.html">Services</a></li>
+          <li><a href="../themes/respond/views/layouts/portfolio.html">Portfolio</a></li>
+          <li><a href="../themes/respond/views/layouts/contact.html">Contact</a></li>
+          <li><a href="../themes/respond/views/layouts/about.html">About</a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
@@ -37,10 +45,10 @@
   <!--Start Carousel-->
   <div id="myCarousel" class="carousel slide">
     <div class="carousel-inner">
-      <div class="item active"> <img src="../themes/respond/assets/img/featured/1.jpg" alt="">
+      <div class="item active"> <img src="../themes/respond/assets/img/featured/1.png" alt="">
         <div class="carousel-caption">
-          <h4>First Thumbnail label</h4>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <h4>ที่ว่าการอำเภอห้างฉัตร จังหวัดลำปาง</h4>
+          <p>ที่ว่าการอำเภอห้างฉัตร ถนนลำปาง-เชียงใหม่ ตำบลเวียงตาล อำเภอห้างฉัตร จังหวัดลำปาง 52190 โทรศัพท์ 054-269323</p>
         </div>
       </div>
       <div class="item"> <img src="../themes/respond/assets/img/featured/2.jpg" alt="">
@@ -99,11 +107,11 @@
             <h2>Navigation</h2>
             <hr>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">About</a></li>
+              <li><a href="../web/index.php">Home</a></li>
+              <li><a href="../themes/respond/views/layouts/services.html">Services</a></li>
+              <li><a href="../themes/respond/views/layouts/portfolio.html">Portfolio</a></li>
+              <li><a href="../themes/respond/views/layouts/contact.html">Contact</a></li>
+              <li><a href="../themes/respond/views/layouts/about.html">About</a></li>
             </ul>
           </nav>
         </div>
