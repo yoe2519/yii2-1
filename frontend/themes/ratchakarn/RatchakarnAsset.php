@@ -3,7 +3,7 @@ namespace frontend\themes\ratchakarn;
 
 class RatchakarnAsset extends  \yii\web\AssetBundle
 {
-    public $sourcePath = '@@frontend/themes/ratchakarn/assets';
+    public $sourcePath = '@frontend/themes/ratchakarn/assets';
     public $css = [
         'css/bootstrap.css',
         'css/bootstrap-theme.css',

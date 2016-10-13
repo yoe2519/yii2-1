@@ -1,171 +1,356 @@
-<?php
-
-// This is Nikom Theme for Nikom Office
-use frontend\themes\material\MaterialAsset;
-use yii\helpers\Html;
-
-MaterialAsset::register($this);
-$asset_path = Yii::$app->assetManager->getPublishedUrl('@frontend/themes/material/assets');
-?>
-<?php $this->beginPage() ?>
 <!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
-    <head>
-        <meta charset="<?= Yii::$app->charset ?>"/>
-        <meta content="IE=edge" http-equiv="X-UA-Compatible">
-        <meta content="initial-scale=1.0, width=device-width" name="viewport">
-        <?= Html::csrfMetaTags() ?>
-        <title><?= Html::encode($this->title) ?></title>
-        <?php $this->head() ?>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
+	<title>Material</title>
 
+	<!-- css -->
+	<link href="../themes/material/assets/css/base.min.css" rel="stylesheet">
+	<link href="../themes/material/assets/css/project.min.css" rel="stylesheet">
+	
+	<!-- favicon -->
+	<!-- ... -->
+</head>
+<body class="page-brand">
+	<header class="header header-transparent header-waterfall ui-header">
+		<ul class="nav nav-list pull-left">
+			<li>
+				<a data-toggle="menu" href="#ui_menu">
+					<span class="icon icon-lg">menu</span>
+				</a>
+			</li>
+		</ul>
+		<a class="header-logo margin-left-no" href="index.html">Material</a>
+		<ul class="nav nav-list pull-right">
+			<li class="dropdown margin-right">
+				<a class="dropdown-toggle padding-left-no padding-right-no" data-toggle="dropdown">
+					<span class="access-hide">John Smith</span>
+					<span class="avatar avatar-sm"><img alt="alt text for John Smith avatar" src="../images/users/avatar-001.jpg"></span>
+				</a>
+				<ul class="dropdown-menu dropdown-menu-right">
+					<li>
+						<a class="padding-right-lg waves-attach" href="javascript:void(0)"><span class="icon icon-lg margin-right">account_box</span>Profile Settings</a>
+					</li>
+					<li>
+						<a class="padding-right-lg waves-attach" href="javascript:void(0)"><span class="icon icon-lg margin-right">add_to_photos</span>Upload Photo</a>
+					</li>
+					<li>
+						<a class="padding-right-lg waves-attach" href="page-login.html"><span class="icon icon-lg margin-right">exit_to_app</span>Logout</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</header>
+	<nav aria-hidden="true" class="menu" id="ui_menu" tabindex="-1">
+		<div class="menu-scroll">
+			<div class="menu-content">
+				<a class="menu-logo" href="index.html">Material</a>
+				<ul class="nav">
+					<li>
+						<a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_components">Components</a>
+						<ul class="menu-collapse collapse" id="ui_menu_components">
+							<li>
+								<a class="waves-attach" href="ui-button.html">Buttons</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-button-fab.html">Buttons<small class="margin-left-xs">(Floating Action Button)</small></a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-card.html">Cards</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-data-table.html">Data Tables</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-dialog.html">Dialogs</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-dropdown-menu.html">Menus</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-nav-drawer.html">Navigation Drawers</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-picker.html">Pickers</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-progress.html">Progress</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-selection-control.html">Selection Controls</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-snackbar.html">Snackbars</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-stepper.html">Steppers</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-tab.html">Tabs</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-text-field.html">Text Fields</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-toolbar.html">Toolbars</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_extras">Extras</a>
+						<ul class="menu-collapse collapse" id="ui_menu_extras">
+							<li>
+								<a class="waves-attach" href="ui-avatar.html">Avatars</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-icon.html">Icons</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-label.html">Labels</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-nav.html">Navs</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-tile.html">Tiles</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_javascript">Javascript</a>
+						<ul class="menu-collapse collapse" id="ui_menu_javascript">
+							<li>
+								<a class="waves-attach" href="ui-affix.html">Affix</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-collapse.html">Collapse</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-dropdown-menu.html">Dropdown</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-modal.html">Modals</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-tab.html">Togglable Tabs</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_samples">Sample Pages</a>
+						<ul class="menu-collapse collapse" id="ui_menu_samples">
+							<li>
+								<a class="waves-attach" href="page-login.html">Login Page</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="page-picker.html">Picker Page</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main class="content">
+		<div class="content-header ui-content-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-lg-push-3 col-sm-10 col-sm-push-1">
+						<h1 class="content-heading">Material</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-push-3 col-sm-10 col-sm-push-1">
+					<section class="content-inner margin-top-no">
+						<div class="card">
+							<div class="card-main">
+								<div class="card-inner">
+									<p>Daemonite's Material UI is a fully responsive, cross-platform, front-end interface based on Google Material Design. This lightweight framework is built in HTML5 using Bootstrap, JS and CSS.</p>
+									<blockquote>A visual language for our users that synthesizes the classic principles of good design with the innovation and possibility of technology and science. This is material design.<sup class="margin-left-xs"><a href="http://www.google.com/design/spec/material-design/introduction.html" target="_blank"><span class="icon">open_in_new</span></a></sup></blockquote>
+									<p>Have a play with this working prototype of Material, let us know what you think at the <a href="http://labs.daemon.com.au" target="_blank">Daemon Labs<sup class="margin-left-xs"><span class="icon">open_in_new</span></sup></a> forum.</p>
+								</div>
+							</div>
+						</div>
+						<h2 class="content-sub-heading">Components</h2>
+						<p>Below are components that have been defined by Material Design Guidelines. For more information, please visit <a href="https://www.google.com/design/spec/components/buttons.html" target="_blank">Material Design Guidelines<sup class="margin-left-xs"><span class="icon">open_in_new</span></sup></a>.</p>
+						<div class="tile-wrap">
+							<a class="tile waves-attach" href="ui-button.html">
+								<div class="tile-inner">
+									<span class="text-black">Buttons</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-button-fab.html">
+								<div class="tile-inner">
+									<span class="text-black">Buttons <small>(Floating Action Button)</small></span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-card.html">
+								<div class="tile-inner">
+									<span class="text-black">Cards</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-data-table.html">
+								<div class="tile-inner">
+									<span class="text-black">Data Tables</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-dialog.html">
+								<div class="tile-inner">
+									<span class="text-black">Dialogs</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-dropdown-menu.html">
+								<div class="tile-inner">
+									<span class="text-black">Menus</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-nav-drawer.html">
+								<div class="tile-inner">
+									<span class="text-black">Navigation Drawers</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-picker.html">
+								<div class="tile-inner">
+									<span class="text-black">Pickers</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-progress.html">
+								<div class="tile-inner">
+									<span class="text-black">Progress</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-selection-control.html">
+								<div class="tile-inner">
+									<span class="text-black">Selection Controls</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-snackbar.html">
+								<div class="tile-inner">
+									<span class="text-black">Snackbars</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-stepper.html">
+								<div class="tile-inner">
+									<span class="text-black">Steppers</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-tab.html">
+								<div class="tile-inner">
+									<span class="text-black">Tabs</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-text-field.html">
+								<div class="tile-inner">
+									<span class="text-black">Text Fields</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-toolbar.html">
+								<div class="tile-inner">
+									<span class="text-black">Toolbars</span>
+								</div>
+							</a>
+						</div>
+						<h2 class="content-sub-heading">Extras</h2>
+						<p>These components have not been specifically defined by Material Design Guidelines, but are used in some Google apps and/or sites.</p>
+						<div class="tile-wrap">
+							<a class="tile waves-attach" href="ui-avatar.html">
+								<div class="tile-inner">
+									<span class="text-black">Avatars</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-icon.html">
+								<div class="tile-inner">
+									<span class="text-black">Icons</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-label.html">
+								<div class="tile-inner">
+									<span class="text-black">Labels</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-nav.html">
+								<div class="tile-inner">
+									<span class="text-black">Navs</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-tile.html">
+								<div class="tile-inner">
+									<span class="text-black">Tiles</span>
+								</div>
+							</a>
+						</div>
+						<h2 class="content-sub-heading">Javascript</h2>
+						<p>Material includes several Bootstrap's Javascript plugins, <code>affix</code>, <code>collapse</code>, <code>dropdown</code>, <code>modal</code> &amp; <code>tab</code>, to be specific. For more information, please visit <a href="http://getbootstrap.com/javascript/" target="_blank">Bootstrap Documentation Site<sup class="margin-left-xs"><span class="icon">open_in_new</span></sup></a>.</p>
+						<div class="tile-wrap">
+							<a class="tile waves-attach" href="ui-affix.html">
+								<div class="tile-inner">
+									<span class="text-black">Affix</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-collapse.html">
+								<div class="tile-inner">
+									<span class="text-black">Collapse</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-dropdown-menu.html">
+								<div class="tile-inner">
+									<span class="text-black">Dropdown</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-modal.html">
+								<div class="tile-inner">
+									<span class="text-black">Modals</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="ui-tab.html">
+								<div class="tile-inner">
+									<span class="text-black">Togglable Tabs</span>
+								</div>
+							</a>
+						</div>
+						<h2 class="content-sub-heading">Sample Pages</h2>
+						<p>Here are some sample webpages built with Material.</p>
+						<div class="tile-wrap">
+							<a class="tile waves-attach" href="page-login.html">
+								<div class="tile-inner">
+									<span class="text-black">Login Page</span>
+								</div>
+							</a>
+							<a class="tile waves-attach" href="page-picker.html">
+								<div class="tile-inner">
+									<span class="text-black">Picker Page</span>
+								</div>
+							</a>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="ui-footer">
+		<div class="container">
+			<p>Material</p>
+		</div>
+	</footer>
+	<div class="fbtn-container">
+		<div class="fbtn-inner">
+			<a class="fbtn fbtn-lg fbtn-brand-accent waves-attach waves-circle waves-light" data-toggle="dropdown"><span class="fbtn-text fbtn-text-left">Links</span><span class="fbtn-ori icon">apps</span><span class="fbtn-sub icon">close</span></a>
+			<div class="fbtn-dropup">
+				<a class="fbtn waves-attach waves-circle" href="https://github.com/Daemonite/material" target="_blank"><span class="fbtn-text fbtn-text-left">Fork me on GitHub</span><span class="icon">code</span></a>
+				<a class="fbtn fbtn-brand waves-attach waves-circle waves-light" href="https://twitter.com/daemonites" target="_blank"><span class="fbtn-text fbtn-text-left">Follow Daemon on Twitter</span><span class="icon">share</span></a>
+				<a class="fbtn fbtn-green waves-attach waves-circle" href="http://www.daemon.com.au/" target="_blank"><span class="fbtn-text fbtn-text-left">Visit Daemon Website</span><span class="icon">link</span></a>
+			</div>
+		</div>
+	</div>
 
-
-        <!-- favicon -->
-        <!-- ... -->
-
-        <!-- ie -->
-        <!--[if lt IE 9]>
-                <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-                <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body class="avoid-fout page-blue">
-        <?php $this->beginBody() ?>
-        <div class="avoid-fout-indicator avoid-fout-indicator-fixed">
-            <div class="progress-circular progress-circular-alt progress-circular-center">
-                <div class="progress-circular-wrapper">
-                    <div class="progress-circular-inner">
-                        <div class="progress-circular-left">
-                            <div class="progress-circular-spinner"></div>
-                        </div>
-                        <div class="progress-circular-gap"></div>
-                        <div class="progress-circular-right">
-                            <div class="progress-circular-spinner"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <header class="header">
-            <ul class="nav nav-list pull-left">
-                <li>
-                    <a data-toggle="menu" href="#menu">
-                        <span class="access-hide">เมนู</span>
-                        <span class="icon icon-menu icon-lg"></span>
-                    </a>
-                </li>
-            </ul>
-            <?= Html::a(Yii::$app->name, Yii::$app->homeUrl, ['class' => 'header-logo']); ?>
-
-            <ul class="nav nav-list pull-right">
-                <?php if (!Yii::$app->user->isGuest) { ?>
-                    <li>
-                        <a data-toggle="menu" href="#profile">
-                            <span class="access-hide">มานพ กองอุ่น</span>
-                            <span class="avatar avatar-sm"><img alt="alt text for John Smith avatar" src="<?= $asset_path; ?>/images/users/avatar-001.jpg"></span>
-                        </a>
-                    </li>
-                <?php } ?>
-            </ul>
-
-        </header>
-        <nav class="menu" id="menu">
-            <div class="menu-scroll">
-                <div class="menu-wrap">
-                    <div class="menu-top">
-                        <div class="menu-top-img">
-                            <img alt="#" src="<?= $asset_path; ?>/images/samples/landscape.jpg">
-                        </div>
-                        <div style="height: 168px;">
-
-                        </div>
-                    </div>
-                    <div class="menu-content">
-                        <?= Html::a(Yii::$app->name, Yii::$app->homeUrl, ['class' => 'menu-logo']); ?>
-                        <ul class="nav">
-                            <li><?= Html::a('<span class="icon icon-exit-to-app"></span> สถานที่ท่องเที่ยว', '#'); ?></li>
-                            <li><?= Html::a('<span class="icon icon-exit-to-app"></span> วัฒนธรรม-ประเพณี', '#'); ?></li>
-                        </ul>
-                        <?php if (!Yii::$app->user->isGuest) { ?>
-                            <hr>
-                            <ul class="nav">
-                                <li>
-                                    <a href="ui-button.html">Buttons</a>
-                                </li>
-                                <li>
-                                    <a href="#"><span class="icon icon-exit-to-app"></span> เมนู</a>
-                                    <span class="menu-collapse-toggle collapsed" data-target="#form-elements" data-toggle="collapse"><i class="icon icon-close menu-collapse-toggle-close"></i><i class="icon icon-add menu-collapse-toggle-default"></i></span>
-                                    <ul class="menu-collapse collapse" id="form-elements">
-                                        <li>
-                                            <a href="#"><span class="icon icon-exit-to-app"></span> ทะเบียน</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="ui-icon.html">Icons</a>
-                                </li>
-                                <li>
-                                    <a href="ui-table.html">Tables</a>
-                                </li>
-                            </ul>
-                        <?php } ?>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <?php if (!Yii::$app->user->isGuest) { ?>
-            <nav class="menu menu-right" id="profile">
-                <div class="menu-scroll">
-                    <div class="menu-wrap">
-                        <div class="menu-top">
-                            <div class="menu-top-img">
-                                <img alt="John Smith" src="<?= $asset_path; ?>/images/samples/landscape.jpg">
-                            </div>
-                            <div class="menu-top-info">
-                                <a class="menu-top-user" href="javascript:void(0)"><span class="avatar pull-left"><img alt="alt text for John Smith avatar" src="<?= $asset_path; ?>/images/users/avatar-001.jpg"></span>มานพ กองอุ่น</a>
-                            </div>
-                            <div class="menu-top-info-sub">
-                                <small>ข้อมูลเพิ่มเติมเกี่ยวกับมานพ กองอุ่น</small>
-                            </div>
-                        </div>
-                        <div class="menu-content">
-                            <ul class="nav">
-                                <li>
-                                    <a href="javascript:void(0)"><span class="icon icon-account-box"></span>Profile Settings</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><span class="icon icon-add-to-photos"></span>Upload Photo</a>
-                                </li>
-                                <li>
-                                    <?= Html::a('<span class="icon icon-exit-to-app"></span>ออกจากระบบ', ['/site/logout'], ['data-method' => 'post']); ?>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        <?php } ?>
-        <div class="content">
-            <?= $content; ?>
-        </div>
-        <footer class="footer">
-            <div class="container">
-                <p>
-                    <?= Yii::$app->name; ?>
-                </p>
-            </div>
-        </footer>
-        <div class="fbtn-container">
-            <div class="fbtn-inner">
-                <a class="fbtn fbtn-red fbtn-lg" data-toggle="dropdown"><span class="fbtn-text">ทางลัด</span><span class="fbtn-ori icon icon-open-in-new"></span><span class="fbtn-sub icon icon-close"></span></a>
-                <div class="fbtn-dropdown">
-                    
-                    <?= Html::a('<span class="fbtn-text">เข้าสู่ระบบ</span><span class="fa fa-link"></span>', ['/site/login'], ['class' => 'fbtn fbtn-alt']); ?>
-                </div>
-            </div>
-        </div>
-
-        <?php $this->endBody() ?>
-    </body>
+	<!-- js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="../js/base.min.js"></script>
+	<script src="../js/project.min.js"></script>
+</body>
 </html>
-<?php $this->endPage() ?>

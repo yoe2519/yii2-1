@@ -50,7 +50,8 @@ return [
             'theme'=>[
                 'pathMap'=>[
                     //'@app/views'=>'@frontend/themes/material/views'
-                    '@app/views'=>'@frontend/themes/ratchakarn/views'
+                    //'@app/views'=>'@frontend/themes/ratchakarn/views'
+                    '@app/views'=>'@frontend/themes/respond/views'
                 ]
             ]
         ],

@@ -1,11 +1,11 @@
 <?php
 namespace frontend\themes\material;
 
-use yii\web\AssetBundle;
+//use yii\web\AssetBundle;
 
-class MaterialAsset extends AssetBundle{
+class MaterialAsset extends \yii\web\AssetBundle
+{
     public $sourcePath = '@frontend/themes/material/assets';
-    
     public $css = [
         'css/base.min.css',
         'css/project.min.css',
