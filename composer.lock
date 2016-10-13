@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "914f9194a4d021de88b285b03e683984",
-    "content-hash": "e1929a97e872bdbaacc8530468eccb67",
+    "hash": "ff5338888958fd15e66dc637d7cb353c",
+    "content-hash": "e7c9e2539899d289cd7d1684356513af",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -162,6 +162,31 @@
             }
         },
         {
+            "name": "bower-asset/toastr",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpapa/toastr-bower.git",
+                "reference": "8ff63def898c6ac619fef2d284576e8e4941cb1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpapa/toastr-bower/zipball/8ff63def898c6ac619fef2d284576e8e4941cb1a",
+                "reference": "8ff63def898c6ac619fef2d284576e8e4941cb1a",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.6.3"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "toastr.js",
+                    "toastr.css"
+                ]
+            }
+        },
+        {
             "name": "bower-asset/yii2-pjax",
             "version": "v2.0.6",
             "source": {
@@ -298,6 +323,98 @@
                 "html"
             ],
             "time": "2015-08-05 01:03:42"
+        },
+        {
+            "name": "kongoon/yii2-theme-ratchakarn",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kongoon/yii2-theme-ratchakarn.git",
+                "reference": "6d064ae21afe64b3af85c6e3ad321d7bb99446a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kongoon/yii2-theme-ratchakarn/zipball/6d064ae21afe64b3af85c6e3ad321d7bb99446a3",
+                "reference": "6d064ae21afe64b3af85c6e3ad321d7bb99446a3",
+                "shasum": ""
+            },
+            "require": {
+                "lavrentiev/yii2-toastr": "*",
+                "yiisoft/yii2": "2.*",
+                "yiisoft/yii2-bootstrap": "2.*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kongoon\\yii2\\themes\\ratchakarn\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Manop Kongoon",
+                    "email": "kongoon@gmail.com"
+                }
+            ],
+            "description": "Ratchakarn theme for Yii Framework 2",
+            "homepage": "https://github.com/kongoon/yii2-theme-ratchakarn",
+            "keywords": [
+                "extension",
+                "theme",
+                "yii2",
+                "ราชการ"
+            ],
+            "time": "2016-05-12 05:29:40"
+        },
+        {
+            "name": "lavrentiev/yii2-toastr",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lavrentiev/yii2-toastr.git",
+                "reference": "758b58ccb7b325b2b4cd10b17178bcb72b8813e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lavrentiev/yii2-toastr/zipball/758b58ccb7b325b2b4cd10b17178bcb72b8813e2",
+                "reference": "758b58ccb7b325b2b4cd10b17178bcb72b8813e2",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/toastr": "2.1.1",
+                "php": ">=5.4.0",
+                "yiisoft/yii2": ">=2.0.6"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "lavrentiev\\widgets\\toastr\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Eugene Lavrentiev (RyanTedder)",
+                    "email": "lavrentiev.e@gmail.com",
+                    "homepage": "https://github.com/lavrentiev"
+                }
+            ],
+            "description": "Simple javascript toast notifications",
+            "homepage": "https://github.com/lavrentiev/yii2-toastr",
+            "keywords": [
+                "extension",
+                "jquery",
+                "notification",
+                "toastr",
+                "yii2"
+            ],
+            "time": "2015-11-05 08:09:14"
         },
         {
             "name": "swiftmailer/swiftmailer",

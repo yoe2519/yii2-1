@@ -6,6 +6,16 @@ $params = array_merge(
     require(__DIR__ . '/params-local.php')
 );
 
+components [
+    'view' => [
+        'theme' => [
+            'pathMap' => [
+                '@app/views' => '@frontend/themes/ratchakarn/views'
+            ]
+        ]
+    ]
+]
+
 return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),

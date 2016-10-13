@@ -1,0 +1,40 @@
+<?php
+
+use kongoon\yii2\themes\ratchakarn\RatchakarnAsset;
+use yii\helpers\Html;
+
+RatchakarnAsset::register($this);
+?>
+<?php $this->beginPage() ?>
+<!DOCTYPE html>
+<html lang="<?= Yii::$app->language ?>">
+    <head>
+        <meta charset="<?= Yii::$app->charset ?>">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <?= Html::csrfMetaTags() ?>
+        <title><?= Html::encode($this->title) ?></title>
+        <?php $this->head() ?>
+
+        <style>
+            body{
+                margin-top:100px;
+            }
+        </style>
+    </head>
+
+    <body class="bg-green">
+    <?php $this->beginBody() ?>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body"><?= $content; ?></div>
+                    </div>
+                </div>
+            </div><!-- end .row -->
+            <?=$this->render('//layouts/_footer')?>
+        </div><!-- end .container -->
+        <?php $this->endBody() ?>
+    </body>
+</html>
+<?php $this->endPage() ?>
