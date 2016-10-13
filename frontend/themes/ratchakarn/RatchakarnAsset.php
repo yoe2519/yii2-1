@@ -1,9 +1,9 @@
 <?php
-namespace kongoon\yii2\themes\ratchakarn;
+namespace frontend\themes\ratchakarn;
 
 class RatchakarnAsset extends  \yii\web\AssetBundle
 {
-    public $sourcePath = '@vendor/kongoon/yii2-theme-ratchakarn/assets';
+    public $sourcePath = '@@frontend/themes/ratchakarn/assets';
     public $css = [
         'css/bootstrap.css',
         'css/bootstrap-theme.css',
