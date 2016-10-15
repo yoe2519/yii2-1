@@ -38,4 +38,8 @@ class respondAsset extends  AssetBundle {
         'yii\bootstrap\BootstrapAsset',
         'yii\bootstrap\BootstrapPluginAsset',
     ];
+    
+    public function init(){
+        parent::init();
+    }
 }

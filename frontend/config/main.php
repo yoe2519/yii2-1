@@ -11,6 +11,7 @@ return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'language' => 'th',
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
@@ -52,6 +53,7 @@ return [
                     //'@app/views'=>'@frontend/themes/material/views'
                     //'@app/views'=>'@frontend/themes/ratchakarn/views'
                     '@app/views'=>'@frontend/themes/respond/views'
+                    //'@app/views'=>'@frontend/themes/colormag/views'
                 ]
             ]
         ],

@@ -1,3 +1,23 @@
+<?php
+
+/* @var $this \yii\web\View */
+/* @var $content string */
+
+use yii\helpers\Html;
+use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
+use yii\widgets\Breadcrumbs;
+//use frontend\assets\AppAsset;
+use common\widgets\Alert;
+//use frontend\assets\MaterialAsset;
+use frontend\themes\respond\respondAsset;
+
+//AppAsset::register($this);
+//MaterialAsset::register($this);
+respondAsset::register($this);
+
+?>
+<?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
@@ -18,6 +38,7 @@
 -->
 </head>
 <body>
+<?php $this->beginBody() ?>
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container"> 
@@ -51,7 +72,7 @@
           <p>ที่ว่าการอำเภอห้างฉัตร ถนนลำปาง-เชียงใหม่ ตำบลเวียงตาล อำเภอห้างฉัตร จังหวัดลำปาง 52190 โทรศัพท์ 054-269323</p>
         </div>
       </div>
-      <div class="item"> <img src="../themes/respond/assets/img/featured/2.jpg" alt="">
+      <div class="item"> <img src="../themes/respond/assets/img/featured/2.png" alt="">
         <div class="carousel-caption">
           <h4>Second Thumbnail label</h4>
           <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -163,6 +184,8 @@ $('.carousel').carousel({
   interval: 5000
 })
 </script>
+<?php $this->endBody() ?>
 </body>
 </html>
+<?php $this->endPage() ?>
 
