@@ -51,11 +51,11 @@ respondAsset::register($this);
         <a class="brand" href="../web/index.php"><span class="color-highlight">H</span>angChat District</a>
       <div class="nav-collapse">
         <ul class="nav pull-right">
-          <li class="active"><a href="../web/index.php">Home</a></li>
-          <li><a href="../themes/respond/views/layouts/services.html">Services</a></li>
-          <li><a href="../themes/respond/views/layouts/portfolio.html">Portfolio</a></li>
-          <li><a href="../themes/respond/views/layouts/contact.html">Contact</a></li>
-          <li><a href="../themes/respond/views/layouts/about.html">About</a></li>
+          <li class="active"><a href="../web/index.php">หน้าแรก</a></li>
+          <li><a href="../themes/respond/views/layouts/general-02.html">บุคลากร</a></li>
+          <li><a href="../themes/respond/views/layouts/portfolio.html">ผลงาน</a></li>
+          <li><a href="../themes/respond/views/layouts/contact.html">ติดต่อ</a></li>
+          <li><a href="../themes/respond/views/layouts/about.html">เกี่ยวกับ</a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
@@ -74,8 +74,8 @@ respondAsset::register($this);
       </div>
       <div class="item"> <img src="../themes/respond/assets/img/featured/2.png" alt="">
         <div class="carousel-caption">
-          <h4>Second Thumbnail label</h4>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <h4>หนึ่งตำบลหนึ่งผลิตภัณฑ์</h4>
+          <p>กลุ่มหัตถกรรมเซรามิค ต.ปงยางคก, กลุ่มผลิตภัณฑ์สมุนไพร ต.เมืองยาว, กลุ่มผลิตภัณฑืเห็ดโคนน้อยดอง ต.วอแก้ว, กลุ่มผลิตภัณฑ์เครื่องหนัง ต.หนองหล่ม, กลุ่มผลิตภัณฑ์กะลามะพร้าว ต.เวียงตาล, กลุ่มเย็บรองเท้า ต.เวียงตาล และ กลุ่มทำเครื่องเงิน ต.เวียงตาล</p>
         </div>
       </div>
     </div>
@@ -84,30 +84,30 @@ respondAsset::register($this);
   <hr>
   <div class="row">
     <div class="span4">
-      <h3>Deep Sky<small> By <a href="#">Srawat56</a></small></h3>
-      <a rel="lightbox" href="../themes/respond/assets/img/thumb1.jpg"><img src="../themes/respond/assets/img/thumb1.jpg" alt=""></a> </div>
+      <h3>ภูมิศาสตร์<small> By <a href="#">administrator</a></small></h3>
+      <a rel="lightbox" href="../themes/respond/assets/img/thumb1.png"><img src="../themes/respond/assets/img/thumb1.png" alt=""></a> </div>
     <div class="span4">
-      <h3>Nature's Valley<small> By <a href="#">Paul venter</a></small></h3>
-      <a rel="lightbox" href="../themes/respond/assets/img/thumb2.jpg"><img src="../themes/respond/assets/img/thumb2.jpg" alt=""></a> </div>
+      <h3>สถานีรถไฟขุนตาล<small> By <a href="#">administrator</a></small></h3>
+      <a rel="lightbox" href="../themes/respond/assets/img/thumb2.png"><img src="../themes/respond/assets/img/thumb2.png" alt=""></a> </div>
     <div class="span4">
-      <h3>Details</h3>
-      <blockquote>Respond is a fully responsive website template utilizing Twitter's Bootstrap framework. What does that mean? First of all, the website will respond according to the size of the viewers browser window. Go on, try it out. Resize your window. On top of that, the framework offers loads of ready-to-go features. Check it out with the button below. <br>
+      <h3>รายละเอียด</h3>
+      <blockquote><strong>วิสัยทัศน์อำเภอห้างฉัตร</strong> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ห้างฉัตรร่มเย็น&nbsp;&nbsp;เป็นเมืองแหล่งวัฒนธรรม <br>นำเรื่องเศรษฐกิจ &nbsp;&nbsp;ปลอดยาเสพติดทุกชุมชน <br>ทุกคนร่วมพัฒนา&nbsp;&nbsp; พาสู่คุณภาพชีวิตที่ดี <br>
         <br>
-        <em>- AwfulMedia.com</em> </blockquote>
-      <p><a class="btn" href="#">All Features &raquo;</a></p>
+        <em>- คณะกรรมการบริหารงานอำเภอห้างฉัตร</em> </blockquote>
+      <p><a class="btn" href="../themes/respond/views/layouts/general-01.html">ข้อมูลสภาพทั่วไป &raquo;</a></p>
     </div>
   </div>
   <!--Start second row of columns-->
   <hr>
   <div class="row">
     <div class="span6 thumb-list"> <a rel="lightbox" href="../themes/respond/assets/img/thumb-small01.png"><img src="../themes/respond/assets/img/thumb-small01.png" alt=""></a>
-      <h3><a href="#">This Should Be Your Title.</a></h3>
-      <p>This will be the description or something I guess. I don't know. Your choice.You could summarize something here. Keep it simple. Just a few short sentences. Maybe one large one? No, a few short ones.</p>
+      <h3><a href="../themes/respond/views/layouts/general-03.html">ข้อมูลสภาพทั่วไป</a></h3>
+      <p>อำเภอห้างฉัตร ตั้งอยู่ทางทิศตะวันตกของจังหวัดลำปาง ห่างจากจังหวัดลำปาง ระยะทาง 17 กิโลเมตร มีพื้นที่ทั้งหมด 429,819 ไร่ หรือ 687.71 ตารางกิโลเมตร เป็นพื้นที่ป่าประมาณ 181,051 ไร่ หรือร้อยละ 42 ของพื้นที่ทั้งหมด เป็นพื้นที่ที่อยู่อาศัยและเพื่อการเกษตรประมาณ 248,765 ไร่ หรือร้อยละ 58 ของพื้นที่ทั้งหมด</p>
     </div>
     <div class="span6 thumb-list"> <a rel="lightbox" href="../themes/respond/assets/img/thumb-small02.png"><img src="../themes/respond/assets/img/thumb-small02.png" alt=""></a>
-      <h3><a href="#">This Should Be Your Title.</a></h3>
-      <p>This will be the description or something I guess. I don't know. Your choice.</p>
-      <a href="#" class="btn">Details</a> </div>
+      <h3><a href="../themes/respond/views/layouts/general-04.html">ประชากร</a></h3>
+      <p>อำเภอห้างฉัตร :: ชาย :: 24,865 , :: หญิง :: 26,154 , :: รวม :: 51,019 , :: จำนวนบ้าน :: 19,698</p>
+      <a href="../themes/respond/views/layouts/general-04.html" class="btn">รายละเอียด</a> </div>
   </div>
   <div class="row">
     <div class="span6 thumb-list"> <a rel="lightbox" href="../themes/respond/assets/img/thumb-small01.png"><img src="../themes/respond/assets/img/thumb-small01.png" alt=""></a>
@@ -125,36 +125,38 @@ respondAsset::register($this);
       <div class="span4">
         <div class="is-padded">
           <nav>
-            <h2>Navigation</h2>
+            <h2>การนำทาง</h2>
             <hr>
             <ul>
-              <li><a href="../web/index.php">Home</a></li>
-              <li><a href="../themes/respond/views/layouts/services.html">Services</a></li>
-              <li><a href="../themes/respond/views/layouts/portfolio.html">Portfolio</a></li>
-              <li><a href="../themes/respond/views/layouts/contact.html">Contact</a></li>
-              <li><a href="../themes/respond/views/layouts/about.html">About</a></li>
+              <li><a href="../web/index.php">หน้าแรก</a></li>
+              <li><a href="../themes/respond/views/layouts/general-02.html">บุคลากร</a></li>
+              <li><a href="../themes/respond/views/layouts/portfolio.html">ผลงาน</a></li>
+              <li><a href="../themes/respond/views/layouts/contact.html">ติดต่อ</a></li>
+              <li><a href="../themes/respond/views/layouts/about.html">เกี่ยวกับ</a></li>
             </ul>
           </nav>
         </div>
       </div>
       <div class="span4">
         <div class="is-padded">
-          <h2>Twitter</h2>
+          <h2>Facebook</h2>
           <hr>
-          <a href="#">@AwfulMedia</a>
-          <p>This is what my tweet looks like on this website. Tweet tweet. Twitter Twatter.</p>
+          <a href="#">#ที่ว่าการอำเภอห้างฉัตร</a>
+          <p>https://www.facebook.com/pages/ที่ว่าการอำเภอห้างฉัตร/109064082511164</p>
           <em>3 days ago</em><br>
           <br>
-          <a href="#">@AwfulMedia</a>
-          <p>This is what my tweet looks like on this website. Tweet tweet. Twitter Twatter.</p>
+          <a href="#">#ที่ว่าการอำเภอห้างฉัตร</a>
+          <p>https://www.facebook.com/pages/ที่ว่าการอำเภอห้างฉัตร/109064082511164</p>
           <em>3 days ago</em> </div>
       </div>
       <div class="span4">
         <div class="is-padded">
-          <h2>Details</h2>
-          <blockquote>Respond is a fully responsive website template utilizing Twitter's Bootstrap framework. What does that mean? First of all, the website will respond according to the size of the viewers browser window. Go on, try it out. Resize your window. On top of that, the framework offers loads of ready-to-go features. Check it out with the button below. <br>
+           <h2>รายละเอียด</h2>
+          <blockquote>แผนพัฒนาอำเภอ 4 ปี (พ.ศ.2561 - 2564) <br>อำเภอห้างฉัตร จ.ลำปาง<br>
             <br>
-            <em>- yoe-lks.net</em> </blockquote>
+            <em>- คณะกรรมการบริหารงานอำเภอห้างฉัตร<br>
+             ที่ทำการปกครองอำเภอห้างฉัตร<br>  
+              โทร. 0 5426 9323</em> </blockquote>
         </div>
       </div>
     </div>
@@ -184,8 +186,8 @@ $('.carousel').carousel({
   interval: 5000
 })
 </script>
-<?php $this->endBody() ?>
+<?php //$this->endBody() ?>
 </body>
 </html>
-<?php $this->endPage() ?>
+<?php //$this->endPage() ?>
 
